@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+.pl50 {
+    padding-left: 50px;
+}
+.pr50 {
+    padding-right: 50px;
+}
+.mt100 {
+    margin-top: 80px;
+}
+
+/* 
+    === Disini untuk implementasi Responsive Image === 
+    Ketika screen lebih dari 992px maka img-logo akan diset width menjadi 200px
+*/
+.img-logo {
+    width: 200px;
+}
+
+/* 
+     === Disini untuk implementasi Media query ===
+     Media query untuk screen dibawah 992px
+*/
+@media screen and (max-width: 992px) {
+     /* 
+        === Disini untuk implementasi Responsive Image === 
+        Ketika screen kurang dari 992px maka img-logo akan diset width menjadi 100%
+     */
+    .img-logo {
+        width: 100%;
+    }
+}
