@@ -19,9 +19,27 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
+  <!-- Div untuk menampilkan preloader - Materialize -->
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="navbar">
     <nav class="lighten-1" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">S-Url Rebrand</a>
@@ -42,14 +60,14 @@
   <div class="wrapper">
 
     <div class="row mt100">
-      <div class="input-field col s10 m5 offset-m4 offset-s1">
+      <div class="input-field col s12 m6 offset-m3">
         <input value="" id="input_url" type="text" class="validate">
         <label for="input_url">Masukkan link disini</label>
       </div>
     </div>
     <div class="row" style="margin-top: -80px;">
       <button 
-        class="col s8 m3 offset-m5 offset-s2 btn waves-effect waves-light btn-send" 
+        class="col s8 m3 offset-m6 offset-s2 btn waves-effect waves-light btn-send" 
         type="submit" 
         name="action"
         id="send_shortener"
@@ -61,7 +79,7 @@
     </div>
     <div class="row">
       
-      <div class="col s10 m5 offset-m4 offset-s1">
+      <div class="col s12 m6 offset-m3 ">
         <div class="progress pink" id="loader">
           <div class="indeterminate white"></div>
         </div>
@@ -132,6 +150,11 @@
     seperti open menu sidebar
    -->
   <script src="js/utilities.js"></script>
+
+  <!-- 
+    Import pageloader
+   -->
+  <script src="js/pageloader.js"></script>
 
   <!-- 
     file /js/api-route.js berisi konfigurasi atau fungsi yang digunakan untuk request api
