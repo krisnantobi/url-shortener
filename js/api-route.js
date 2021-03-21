@@ -62,7 +62,7 @@ $(document).ready(function () {
             dataType: "json"
         }).done(function (res) {
             /** Cath response api and append to DOM */
-            $('#result_original_link').html(`Original Link <a href='${res.destination}' target='_blank'>${res.destination}</a>`);
+            // $('#result_original_link').html(`Original Link <a href='${res.destination}' target='_blank'>${res.destination}</a>`);
             $('#result_short_url').val('https://'+res.shortUrl);
 
             $('#result_short_url_card').removeClass('hidden');

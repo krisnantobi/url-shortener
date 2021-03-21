@@ -43,7 +43,7 @@
 
     <div class="row mt100">
       <div class="input-field col s10 m5 offset-m4 offset-s1">
-        <input value="https://reqbin.com/echo/post/json" id="input_url" type="text" class="validate">
+        <input value="" id="input_url" type="text" class="validate">
         <label for="input_url">Masukkan link disini</label>
       </div>
     </div>
@@ -55,7 +55,7 @@
         id="send_shortener"
       >
         
-        Generate link to Short
+        Generate Short Url
         <i class="material-icons right">send</i>
       </button>
     </div>
@@ -68,8 +68,8 @@
         <div class="card horizontal" id="result_short_url_card">
           <div class="card-stacked">
             <div class="card-content">
-              <p id="result_original_link"></p>
-              <input id="result_short_url" value="dd"/>
+              <p id="result_original_link">Your short url</p>
+              <input id="result_short_url" value="" readonly/>
             </div>
             <div class="card-action">
               <a href="#copy_to_clipboard" id="copy_to_clipboard">Copy link
