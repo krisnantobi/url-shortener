@@ -1,4 +1,5 @@
 # S-URL Rebrand Shortener
+Demo : https://reverent-tereshkova-29853e.netlify.app/
 
 S-URL Rebrand Shortener Penyingkat URL yang ramah pengguna. S-URL Rebrand juga memiliki fitur update berita covid yang selalu update.
 
