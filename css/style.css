@@ -1,5 +1,8 @@
 body{
     margin: 0;
+    background:#192446;
+    color: #fff;
+    font-size: 16px;
 }
 .pl50 {
     padding-left: 50px;
@@ -10,7 +13,44 @@ body{
 .mt100 {
     margin-top: 80px;
 }
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+#result_original_link{
+    color:#a0a0a0;
+}
+#result_short_url{
+    color:rgb(5, 5, 5);
+}
+input{
+    color: #fff
+}
 
+/* === Disini coba untuk custom color css bawaan materialize ===  */
+/* label focus color */
+ .input-field input[type=text]:focus + label {
+    color: rgb(255, 255, 255);
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+border-bottom: 1px solid rgb(255, 255, 255);
+box-shadow: 0 1px 0 0 rgb(255, 255, 255);
+}
+.toast-success {
+    background-color: rgb(0, 255, 13);
+    color: rgb(29, 24, 24);
+}
+.toast-error {
+    background-color: rgb(219, 73, 37);
+    color: rgb(250, 250, 250);
+}
+nav, .page-footer{
+    background-color: #e4514b;
+}
+.btn-send {
+    background-color: #e4514b !important;
+}
 /* 
     === Disini untuk implementasi Responsive Image === 
     Ketika screen lebih dari 992px maka img-logo akan diset width menjadi 200px

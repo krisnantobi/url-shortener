@@ -1,8 +1,14 @@
-var CACHE_NAME = 'my-site-cache-v1';
+/**
+ * === Service worker dalam tugas ini belum digunakan ===
+ */
+
+var CACHE_NAME = 's-short-cache-v1';
 var urlsToCache = [
   '/',
-  '/styles/main.css',
-  '/script/main.js'
+  '/css/style.css',
+  '/js/api-route.js',
+  '/js/utilities.js',
+  '/images/logo.js'
 ];
 
 self.addEventListener('install', function(event) {
@@ -18,7 +24,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-  var cacheAllowlist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+  var cacheAllowlist = ['s-short-cache-v1', 's-short-cache-v1'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {

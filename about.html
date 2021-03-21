@@ -24,7 +24,7 @@
 <body>
   <div class="navbar">
     <nav class="lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">S-Url Rebrand</a>
+      <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">S-Url Rebrand</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="/">Url Shortener</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
@@ -40,50 +40,6 @@
   </div>
 
   <div class="wrapper">
-
-    <div class="row mt100">
-      <div class="input-field col s10 m5 offset-m4 offset-s1">
-        <input value="https://reqbin.com/echo/post/json" id="input_url" type="text" class="validate">
-        <label for="input_url">Masukkan link disini</label>
-      </div>
-    </div>
-    <div class="row" style="margin-top: -80px;">
-      <button 
-        class="col s8 m3 offset-m5 offset-s2 btn waves-effect waves-light btn-send" 
-        type="submit" 
-        name="action"
-        id="send_shortener"
-      >
-        
-        Generate link to Short
-        <i class="material-icons right">send</i>
-      </button>
-    </div>
-    <div class="row">
-      
-      <div class="col s10 m5 offset-m4 offset-s1">
-        <div class="progress pink" id="loader">
-          <div class="indeterminate white"></div>
-        </div>
-        <div class="card horizontal" id="result_short_url_card">
-          <div class="card-stacked">
-            <div class="card-content">
-              <p id="result_original_link"></p>
-              <input id="result_short_url" value="dd"/>
-            </div>
-            <div class="card-action">
-              <a href="#copy_to_clipboard" id="copy_to_clipboard">Copy link
-                <i class="material-icons">content_copy</i>
-              </a>
-              <a href="#visit_link" id="visit_link">Buka link 
-                <i class="material-icons">launch</i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="row" style="margin-top: 5rem;margin-bottom: 4rem;">
       <div class="col s12 m8 offset-m2">
         <img src="images/logo.png" class="materialboxed img-logo" alt="" srcset="">
@@ -91,6 +47,16 @@
         <p>S-URL Rebrand Shortener Penyingkat URL yang ramah pengguna. S-URL Rebrand juga memiliki fitur update berita covid yang selalu update.</p>
         <p>
           URL Shortener  adalah teknik di World Wide Web yang mana Uniform Resource Locator (URL) dapat dibuat secara substansial lebih pendek dan masih mengarahkan ke halaman yang dibutuhkan. Fungsinya sendiri, URL Shortener tentu memudahkan pengguna internet dalam mengakses dan mengingat sebuah link, dikarenakan link tersebut akan lebih pendek karakternya.
+        </p>
+        <h4>Kenapa menggunakan S-Short Rebrand?</h4>
+        <p>Kadang kala kita ingin membagikan (share) link kita, halaman yang kita bagikan ke internet akan terlihat lebih enak dilihat, tidak terlihat url yang mungkin sangat panjang, sehingga user(pengguna internet) lainnya tidak merasa terganggu(tidak nyaman) dengan link share kita.</p>
+        <h4>Contoh kemudahan menggunakan S-Url Rebrand</h4>
+        <p>
+            Link asli: <br>
+            https://chordqu.com/mahalini-nuca/chord-gitar-%20mahalini-&-nuca-aku-yang-salah<br><br>
+
+            Bisa disingkat menjadi: <br>
+            https://rebrand.ly/i0citzw
         </p>
       </div>
     </div>
@@ -120,24 +86,6 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
-  <!-- 
-     === Disini untuk implementasi Responsive Web Design ===
-     Saya menggunakan materialize
-  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- 
-    file /js/utilities.js berisi konfigurasi atau helper yang dibutuhkan untuk materialize
-    seperti open menu sidebar
-   -->
-  <script src="js/utilities.js"></script>
-
-  <!-- 
-    file /js/api-route.js berisi konfigurasi atau fungsi yang digunakan untuk request api
-   -->
-  <script src="js/api-route.js"></script>
-  <script src="serviceworker.js"></script>
 </body>
 
 </html>
