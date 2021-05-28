@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
 
   <div class="navbar">
     <nav class="lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">S-Url Rebrand</a>
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">S-Url Rebrand</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="/">Url Shortener</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
@@ -109,17 +110,17 @@
       </div>
     </div>
   </footer>
+  
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script>
-  // Event for page loader
-  document.addEventListener("DOMContentLoaded", function(){
-    $('.preloader-background').delay(1700).fadeOut('slow');
-    
-    $('.preloader-wrapper')
-      .delay(1700)
-      .fadeOut();
-  });
-  </script>
+  <!-- 
+     === Disini untuk implementasi Responsive Web Design ===
+     Saya menggunakan materialize
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- 
+    file /js/main.js berisi konfigurasi atau fungsi yang digunakan untuk request api dan helper function materialize dan page loader
+   -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
