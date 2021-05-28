@@ -1,0 +1,86 @@
+<!-- File ini hanya akan di panggil saat offline -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 
+    === Disini untuk implementasi Tag Viewport ===
+    Tag viewport digunakan untuk mengontrol diimensi dan scalling.  
+    width=device-width => berfungsi untuk set width dari page untuk mengikuti lebar screen dari device
+    initial-scale=1.0 => berfungsi untuk mengatur tingkat zoom awal saat halaman pertama kali di load 
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S-Url Rebrand</title>
+  <!-- 
+     === Disini untuk implementasi Responsive Web Design ===
+     Saya menggunakan materialize dan sedikit custom style css sendiri disini 
+  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!-- Div untuk menampilkan preloader - Materialize -->
+  <div class="preloader-background">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-red-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <nav class="lighten-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">S-Url Rebrand</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Url Shortener</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="/">Url Shortener</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="wrapper">
+    <div class="row" style="margin-top: 5rem;margin-bottom: 4rem;">
+      <div class="col s12 m8 offset-m2">
+        <h3>Oops..!! Kamu sedang offline</h3>
+        <p><a href="/">Back to Home</a></p>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+  // Event for page loader
+  document.addEventListener("DOMContentLoaded", function(){
+    $('.preloader-background').delay(1700).fadeOut('slow');
+    
+    $('.preloader-wrapper')
+      .delay(1700)
+      .fadeOut();
+  });
+  </script>
+</body>
+
+</html>
