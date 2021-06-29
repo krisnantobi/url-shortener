@@ -1,6 +1,6 @@
 {
-    "short_name": "Notes",
-    "name": "The Notes",
+    "short_name": "UrlS",
+    "name": "URL Shortener",
     "icons": [
       {
         "src": "/images/logo.png",
